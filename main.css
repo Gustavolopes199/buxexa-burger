@@ -1,0 +1,364 @@
+
+body {
+	background-color: gray;
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	border:none;
+	text-decoration: none;
+	list-style: none;
+}
+html{
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+}
+.titulos{
+	font-size: 6em;
+	justify-content: center;
+	place-items: center;
+	color: white;
+	text-align: center;
+	padding: 1px;
+	line-height: 0px;
+	font-weight: 100;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+}
+
+.first-section{
+	background-image:linear-gradient(rgba(29,29,29,0.8), rgba(29,29,29,0.8)),url(./fundo.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: 10px;
+	text-transform: uppercase;
+}
+
+.titulos div h1{
+	font-size: 100%;	
+	font-family: Arial, Helvetica, sans-serif;	
+}
+.titulos div h2{
+	font-size: 100%;
+	font-weight: lighter;
+	font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.menusuperior{
+	width: 100%;
+	height: 70px;
+	background-color: #1f1e1f;
+	color: white;
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+	padding: 0px;
+	position: fixed;
+}
+.list-menu{
+	width: 600px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+.menusuperior li{
+	position: relative;
+	color:white;
+}
+.menusuperior li:hover ::after{
+	width: 100%;
+}
+
+div#b{
+	color: white;
+}
+div#drinksexpo{
+	color:whitesmoke;
+}
+
+.burgersss{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	text-align: center;
+}
+button#pedir{
+	cursor: pointer;
+}
+div#titulo1{
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	line-height: 50px;
+}
+p#nomehamburguer{
+	color: white;
+}
+
+.menusuperior .list-menu li a{
+	padding: 3rem 1rem 1rem 1rem;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.menusuperior .list-menu li a:hover{
+	background-color: #1f1e1f;
+	color: brown;
+	border-bottom: 4px solid brown;
+	transition:0.1s ease-in-out;
+}
+.titulos button{
+	border-radius: 10px;
+	width: 200px;
+	height: 40px;
+	color:white;
+	font-size: 1rem;
+	background: none;
+	text-transform: uppercase;
+	margin-top: 1em;
+	transition: 0.1s;
+	cursor: pointer;
+	border: none;
+}
+.titulos button:hover{
+	background-color: brown;
+	transition: 0.1s ease-in-out brown;
+	color:white;
+}
+
+.clientes .cliente h1{
+	color: white;
+}
+.clientes{
+	color: white;
+	text-align: center;
+	margin-top: 10px;
+	text-decoration: none;
+	background-color:  rgb(46, 45, 43);
+}
+.fotos{
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}
+.fotos img{
+	width: 300px;
+	height: 300px;
+	border-radius: 15%;
+	cursor:pointer;
+}
+.fotos a{
+	color: white;
+	font-size: 40px;
+}
+
+.inicioprodutos{
+text-align: center;
+color: white;
+text-transform:uppercase;
+height: 25%;
+width: 100%;
+background-color: rgb(46, 45, 43);
+}
+.produtos{
+	justify-content: space-around;
+	display: flex;
+}
+.produtos .product img{
+	width: 60%;
+	height: 60%;
+}
+.product{
+	margin-right: 100px;
+}
+
+.inicioprodutos .produtos .product .botaopedir{
+	display: inline-block;
+	padding: .75rem 1.25rem;
+	border-radius: 10rem;
+	color: black;
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: .15rem;
+	transition: all .3s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background: none;
+	border: none;
+	cursor:pointer;
+	text-decoration: underline;
+  }
+  .inicioprodutos .produtos .product .botaopedir::after{
+	transition: all .3s;
+  }
+  .inicioprodutos .produtos .product .botaopedir::before{
+	transition: all .3s;
+  }
+  .inicioprodutos .produtos .product .botaopedir:hover{
+	background-color: brown;
+	color: white;
+	transition: all .3s;
+  }
+  
+  .inicioprodutos h1{
+	height: 30px;
+	width: 100%;
+	background-color: #1f1e1f;
+	margin-top: 0;
+  }
+  .inicioprodutos .produtosdrinks .product img{
+	width: 50%;
+	height: 50%;
+}
+.inicioprodutos .produtosdrinks{
+	display: flex;
+	justify-content: center;
+	margin-left: 30%;
+	margin-right: 25%;
+}
+
+.inicioprodutos .produtosdrinks .product button{
+	display: inline-block;
+	padding: .75rem 1.25rem;
+	border-radius: 10rem;
+	color: black;
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: .15rem;
+	transition: all .3s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background: none;
+	border: none;
+	cursor:pointer;
+	text-decoration: underline;	
+}
+.inicioprodutos .produtosdrinks .product button:hover{
+	background-color: brown;
+	color: white;
+	transition: all .3s;
+}
+.contatos{
+	background-color: rgb(46, 45, 43);
+}
+.contatos h3{
+	height: 30px;
+	width: 100%;
+	background-color: #1f1e1f;
+	margin-top: 0;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+}
+.contatos .contact{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	list-style: none;
+	color: white;
+	text-decoration: none;
+	margin-top: 0;
+	line-height: 0px;
+	background-color: rgb(46, 45, 43);
+}
+.contatos .contact a{
+	color: white;
+	text-decoration: none;
+	align-items: center;
+	margin-top: 0px;
+}
+footer{
+	height: 25px;
+	background-color: #1f1e1f;
+	color: white;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 20px;
+}
+.clientes h1{
+	height: 30px;
+	width: 100%;
+	background-color: #1f1e1f;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+}
+
+@media(max-width: 875px){
+	.produtos{
+		display: block;
+	}
+	.inicioprodutos .produtosdrinks{
+		display: block;
+	}
+	.fotos{
+		display: block;
+	}
+}
+@media(max-width: 575px){
+	.produtos{
+		display: block;
+	}
+	.inicioprodutos .produtosdrinks{
+		display: block;
+	}
+	.fotos{
+		display: block;
+	}
+	.menusuperior{
+		justify-content: center;
+	}
+}
+@media(max-width: 500px){
+	.produtos{
+		display: block;
+	}
+	.inicioprodutos .produtosdrinks{
+		display: block;
+	}
+	.fotos{
+		display: block;
+	}
+	.titulos div h1{
+		font-size: 50%;
+	}
+	.titulos div h2{
+		font-size: 35%;
+	}
+	.menusuperior{
+		justify-content: center;
+	}
+}
+@media(max-width: 300px){
+	.produtos{
+		display: block;
+	}
+	.inicioprodutos .produtosdrinks{
+		display: block;
+	}
+	.fotos{
+		display: block;
+	}
+	.fotos img{
+		height: 40%;
+		width: 40%;
+	}
+	.titulos div h1{
+		font-size: 25%;
+	}
+	.titulos div h2{
+		font-size: 15%;
+	}
+	.contatos .contact{
+		display: block;
+	}
+	.menusuperior{
+		justify-content: center;
+	}
+}
